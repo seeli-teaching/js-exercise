@@ -14,6 +14,11 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "npm install",
 
+	"mounts": [
+		"source=tododb,target=/etc/todos,type=volume"
+	
+	],
+
 	// Configure tool-specific properties.
 	// "customizations": {},
 
